@@ -9,7 +9,7 @@
     <name>cshjc Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
-        <!-- 使用junit4 单元测试使用-->
+        <!-- 使用junit4 单元测试使用_-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
