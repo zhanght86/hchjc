@@ -1,0 +1,412 @@
+
+.album-content{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
+.album-content .album-header{
+	width: 100%;
+	height: 480px;
+	position: relative;
+}
+.album-content .album-header .album-mask{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 220px;
+	background: linear-gradient(to top,rgba(0,0,0,1),rgba(0,0,0,0));
+	z-index: 1;
+}
+.album-content .album-header img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.album-content .album-header .album-like{
+	display: inline-block;
+	width: 90px;
+	height: 36px;
+	line-height: 36px;
+	border: solid 1px #ada598;
+	color: #ada598;
+	text-align: center;
+	font-size: 14px;
+	border-radius: 18px;
+	background-color: rgba(0,0,0,0.32);
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+	cursor: pointer;
+}
+.album-content .album-header .album-like:hover{
+	color: #fd544a;
+	border: solid 1px #fd544a;
+}
+.album-content .album-header .active{
+	color: #fd544a;
+	border: solid 1px #fd544a;
+}
+.album-content .album-header .album-like .iconfont{
+	line-height: 36px;
+	display: inline-block;
+	margin: 0 5px;
+}
+.album-header .album-tag{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	border-top: dashed 1px #303030;
+	overflow: hidden;
+	z-index: 2;
+} 
+.album-header .album-tag .tag-header{
+	color: #a82824;
+	font-size: 12px;
+	height: 18px;
+	margin-top: 20px;
+	display: inline-block;
+	float: left;
+	margin-left: 30px;
+} 
+.album-header .album-tag .tag-header img{
+	display: block;
+	height: 18px;
+	width: auto;
+	position: initial;
+} 
+
+.album-header .album-tag .tag-list{
+	overflow: hidden;
+	height: 60px;
+	line-height: 60px;
+	box-sizing: border-box;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #c7c7c7;
+	display: inline-block;
+} 
+.album-header .album-tag .tag-list li{
+	float: left;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	border-radius: 15px;
+	border: none;
+	margin: 0 5px;
+	padding: 0 10px;
+	cursor: pointer;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+} 
+.album-header .album-tag .tag-list li:hover{
+	color: #ECD5D4;
+	background-color: #B22824;
+}
+.album-header .album-tag .tag-list li.active{
+	color: #ECD5D4;
+	background-color: #B22824;
+} 
+
+.album-header .album-share{
+	position: absolute;
+	right: 15px;
+	bottom: 20px;
+	z-index: 3;
+}
+.album-header .album-share .share-text{
+	font-size: 12px;
+	color: #666666;
+	line-height: 55px;
+	display: inline-block;
+	margin-right: 15px;
+}
+.album-header .album-share .bdsharebuttonbox{
+	float: right;
+	height: 55px;
+}
+.bdshare-button-style1-32 .bds_tsina{
+	background: none;
+	text-indent: 0;
+}
+.bdshare-button-style1-32 .bds_weixin{
+	background: none;
+	text-indent: 0;
+}
+.album-header .album-share .weibo{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	background-color: #fd544a;
+	border-radius: 100%;
+	margin: 0;
+	margin-right: 10px;
+	font-size: 32px;
+	color: #fff;
+	line-height: 55px;
+	text-align: center;
+}
+.album-header .album-share .weixin{
+	display: inline-block;
+	height: 55px;
+	width: 55px;
+	background-color: #4dcb22;
+	border-radius: 100%;
+	margin: 0;
+	font-size: 32px;
+	color: #fff;
+	line-height: 55px;
+	text-align: center;
+	position: relative;
+	overflow: initial;
+}
+.album-header .album-share .weixin .weixin-qrcode{
+	position: absolute;
+	top: 65px;
+	left: 27px;
+	width: 212px;
+	border-radius: 8px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	box-shadow: rgba(0,0,0,0.32) 0px 0px 5px 1px;
+	-webkit-box-shadow: rgba(0,0,0,0.32) 0px 0px 5px 1px;
+	background-color: #fff;
+	padding-bottom: 12px;
+	display: none;
+}
+.album-header .album-share .weixin:hover{
+	opacity: 1;
+}
+.album-header .album-share .weibo:hover{
+	opacity: 1;
+}
+.album-header .album-share .weixin:hover .weixin-qrcode{
+	display: block;
+}
+.album-header .album-share .weixin .weixin-qrcode p{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	font-size: 12px;
+	background-color: #f7f7f7;
+	text-align: center;
+	color: #000;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+.album-header .album-share .weixin .weixin-qrcode .wx-triangle{
+	position: absolute;
+	left: 100px;
+	top: -14px;
+	border-bottom: solid 8px #f7f7f7;
+	border-top: solid 8px transparent;
+	border-left: solid 8px transparent;
+	border-right: solid 8px transparent;
+}
+.album-header .album-share .weixin .weixin-qrcode img{
+	width: 134px;
+	height: 134px;
+	display: block;
+	margin-top: 12px;
+	margin-left: 39px;
+	position: initial;
+}
+.album-header .album-share .weixin .weixin-qrcode span:not([class^='wx-triangle']){
+	display: block;
+	width: 100%;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #adadad;
+}
+
+.album-header .album-share i{
+	display: inline-block;
+	color: #fff;
+	line-height: 55px;
+	text-align: center;
+	width: 100%;
+	font-size: 32px;
+	cursor: pointer;
+}
+
+.album-title{
+	height: 152px;
+	width: 100%;
+	background-color: #fff;
+	border: solid 1px #eaecef;
+	background-image: url(../img/yihao.png);
+	background-repeat: no-repeat;
+	background-position: 1155px 22px;
+}
+.album-title .title-intro{
+	box-sizing: border-box;
+	width: 68px;
+	height: 150px;
+	background: url(../img/albumTitlebg.png) no-repeat;
+	background-size: 100%;
+	padding-left: 26px;
+	padding-top: 28px;
+	font-size: 22px;
+	line-height: 25px;
+	font-weight: 100;
+	color: #fff;
+	letter-spacing: 10px;
+	transform: translateX(-3px);
+	display: inline-block;
+	float: left;
+}
+.album-title .intro-content{
+	display: inline-block;
+	width: 1132px;
+	height: 152px;
+	padding: 20px 60px 20px 40px;
+	box-sizing: border-box;
+	line-height: 28px;
+	font-size: 14px;
+}
+.album-title .intro-content p{
+	display: inline-block;
+	width: 100%;
+	color: #7a7a7a;
+}
+.album-statistics{
+	width: 100%;
+	line-height: 55px;
+	height: 55px;
+	text-align: center;
+	border: solid 1px #eaecef;
+	border-top: none;
+	color: #000;
+	font-size: 14px;
+	background-color: #fff;
+}
+.album-statistics .album-name{
+	margin: 0 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.album-statistics .album-itemNum{
+	color: #b22824;
+	font-size: 18px;
+	margin: 0 5px;
+}
+
+.album-item{
+	overflow: hidden;
+	background-color: #fff;
+}
+.album-item li{
+	display: inline-block;
+	float: left;
+	width: 600px;
+	box-sizing: border-box;
+	border-left: solid 1px #eaecef;
+	border-right: solid 1px #eaecef;
+	padding: 35px;
+	border-bottom: solid 1px #eaecef;
+}
+.album-item li .item-img{
+	width: 189px;
+	height: 360px;
+	background: url(../img/iphone.png) no-repeat;
+	background-size: 100% auto;
+	float: left;
+}
+.album-item li .item-img img{
+	width: 166px;
+	height: 270px;
+	margin-top: 45px;
+	margin-left: 10px;
+}
+
+.album-item li .item-content{
+	margin-top: 20px;
+	margin-left: 220px;
+}
+.album-item li .item-content h5{
+	font-weight: 600;
+	font-size: 24px;
+	color: #333333;
+}
+.album-item li .item-content h5 a{
+	color: #333333;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+.album-item li .item-content h5 a:hover{
+	color: #B22824;
+}
+.album-item li .item-content span{
+	color: #a6a6a6;
+	display: inline-block;
+	margin: 10px 0;
+	font-size: 14px;
+}
+.album-item li .item-content span a{
+	color: #a6a6a6;
+}
+.album-item li .item-content span a:hover{
+	text-decoration: underline;
+}
+.album-item li .item-content p{
+	color: #454545;
+	font-size: 14px;
+	overflow: hidden;
+	display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
+    line-height: 25px;
+}
+
+.album-item li .item-qrcode{
+	width: 188px;
+	height: 144px;
+	background: url(../img/itemQRCode.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 270px;
+	margin-top: 20px;
+}
+.album-item li .item-qrcode img{
+	width: 126px;
+	height: 126px;
+	margin: 9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

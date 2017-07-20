@@ -1,0 +1,166 @@
+.wrapper2 .flashBox{
+	background: none;
+	width: 780px;
+	height: 480px;
+	margin: 0 auto;
+	float: none;
+	margin-top: 20px;
+}
+.wrapper2 .flashBox .videoContent{
+	width: 100%;
+	height: 100%;
+	position: initial;
+}
+.wrapper2 .flashBox .videoContent embed{
+	width: 100%;
+	height: 100%;
+}
+.caseMainTitle .caseLeft .caseLeftBottom p.caseLeftIntro{
+	color: rgb(118,118,118);
+	margin-left: 0;
+	padding-left: 12px;
+	border-left: solid 1px #343339;
+}
+
+
+.comment .recommendBox .recommendList .left-content{
+	padding: 20px 0;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+.comment .recommendBox .recommendList .left-content li{
+	width: 243px;
+	margin: 15px 8px;
+	height: auto;
+}
+.comment .recommendBox .recommendList .left-content li:hover{
+	box-shadow: 0px 0px 5px 1px rgb(0,0,0);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.16);
+}
+.comment .recommendBox .recommendList .left-content a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.comment .recommendBox .recommendList .left-content a figure{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.comment .recommendBox .recommendList .left-content a figure .img-box{
+	width: 243px;
+	height: 136px;
+	overflow: hidden;
+}
+.comment .recommendBox .recommendList .left-content a figure .img-box img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all ease-in-out 0.3s;
+	-moz-transition: all ease-in-out 0.3s ;
+	-ms-transition: all ease-in-out 0.3s ;
+	-o-transition: all ease-in-out 0.3s ;
+	transition: all ease-in-out 0.3s ;
+}
+.comment .recommendBox .recommendList .left-content a:hover figure .img-box img{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.comment .recommendBox .recommendList .left-content a figure figcaption{
+	font-size: 12px;
+	color: rgb(107,107,107);
+	line-height: 34px;
+	text-indent: 12px;
+	display: block;
+	font-weight: 600;
+}
+.comment .recommendBox .recommendList .left-content a figure .left-mask{
+	position: absolute;
+	left: 0;
+	top: 68px;
+	width: 100%;
+	height: 68px;
+	background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.64) );
+}
+.comment .recommendBox .recommendList .left-content a figure .left-mask>img{
+	width: 54px;
+	height: 45px;
+	position: absolute;
+	left: 95px;
+	top: -22px;
+}
+.comment .recommendBox .recommendList .left-content a figure .left-mask span{
+	color: #fff;
+	font-size: 12px;
+	position: absolute;
+	right: 10px;
+	bottom: 6px;
+}
+
+
+.caseMainTitle .caseLeft .caseLeftTop h1{
+	background-image: url(../img/videoLogo.png);
+	background-size: auto 80%;
+}
+
+.caseMainTitle .caseLeft .caseLeftBottom{
+	color: #999999;
+	font-size: 12px;
+	margin-left: 24px;
+}
+.caseMainTitle .caseLeft .caseLeftBottom span{
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.caseContent .content .wrapper2{
+	border: none;
+}
+.caseContent .content .label{
+	border-top: 1px solid #393840;
+}
+
+.caseContent .video-abstract{
+	width: 900px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+.caseContent .video-abstract .abstract-box{
+	overflow: hidden;
+}
+.caseContent .video-abstract img{
+	margin: 20px auto;
+	display: block;
+	max-width: 100%;
+}
+.caseContent .video-abstract p{
+	color: #aaaaaa;
+	font-size: 14px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+.caseContent .video-abstract span{
+	display: block;
+	color: #999999;
+	font-size: 14px;
+	cursor: pointer;
+	width: 80px;
+	text-align: center;
+	margin: 0 auto;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 20px;
+}
+.caseContent .video-abstract span i{
+	display: inline-block;
+	margin-left: 5px;
+}
+
+
+
+
+
+

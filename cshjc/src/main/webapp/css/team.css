@@ -1,0 +1,659 @@
+/*团队页头部mask*/
+.head-mask{
+	position: relative;
+	width: 100%;
+	height: 450px;
+	background: url(../img/teambg.png) no-repeat;
+	background-position: 50% 50%;
+}
+.head-mask .head-mask-content{
+	margin: 0 auto;
+	width: 1200px;
+}
+.head-mask .mask-mask{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 225px;
+	width: 100%;
+	background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,0.32));
+	z-index: -1;
+}
+.head-mask .mask-share{
+	padding-top: 20px;
+}
+.head-mask #share{
+	display: inline-block;
+}
+.head-mask #share .bdsharebuttonbox{
+	
+}
+.head-mask #share .bdsharebuttonbox div{
+	color: rgba(0,0,0,0.36);
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.64);
+	font-size: 24px;
+	cursor: pointer;
+	margin: 0 5px;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+.head-mask #share .bdsharebuttonbox div:hover{
+	color: rgba(0,0,0,0.24);
+}
+.head-mask #share .bdsharebuttonbox div a{
+	color: rgba(0,0,0,0.36);
+	text-shadow: 0px 0px 3px rgba(255,255,255,0.64);
+	font-size: 24px;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+.head-mask #share .bdsharebuttonbox div a:hover{
+	color: rgba(0,0,0,0.24);
+}
+.head-mask #share .bdsharebuttonbox div .subscript{
+	position: absolute;
+	left: -54px;
+	top: 36px;
+	color: #fff;
+	font-size: 12px;
+	background-color: #494949;
+	font-weight: 100;
+	margin: 0;
+	text-align: center;
+	padding: 0 15px;
+	height: 30px;
+	line-height: 30px;
+	display: block;
+	width: 100px;
+	border-radius: 5px;
+	display: none;
+	letter-spacing: 3px;
+}
+.head-mask #share .bdsharebuttonbox div:hover .subscript{
+	display: block;
+}
+.head-mask #share .bdsharebuttonbox div .subscript span{
+	position: absolute;
+	left: 50%;
+	top: -12px;
+	border-bottom: solid 7px #494949;
+	border-top: solid 7px transparent;
+	border-right: solid 6px transparent;
+	border-left: solid 6px transparent;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.head-mask #share .bdshare-button-style1-32 a{
+	float: none;
+	width: auto;
+	height: auto;
+	background: none;
+	line-height: 32px;
+	margin: 0;
+	text-indent: 0;
+	color: rgb(143,143,143);
+	font-size: 24px;
+	margin: 8px 5px;
+}
+.head-mask #share .bdshare-button-style1-32 span{
+	cursor: pointer;
+	color: rgb(143,143,143);
+	font-size: 24px;
+	display: inline-block;
+	margin: 8px 5px;
+	line-height: 32px;
+}
+.head-mask #share .bdshare-button-style1-32 span:hover{
+	color: rgb(158,158,158);
+}
+.head-mask .mask-follow{
+	display: inline-block;
+	float: right;
+	color: #fff;
+	font-size: 14px;
+	line-height: 30px;
+	height: 30px;
+	padding: 0 20px;
+	border-radius: 15px;
+	border: solid 1px rgb(222,222,222);
+	background-color: rgba(0,0,0,0.16);
+	cursor: pointer;
+}
+.head-mask .mask-follow:hover{
+	background-color: rgba(0,0,0,0.32);
+}
+.head-mask .mask-team{
+	padding-top: 10px;
+}
+.head-mask .mask-team .mask-icon{
+	width: 120px;
+	height: 120px;
+	border-radius: 100%;
+	border: solid 6px rgba(255,255,255,0.32);
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.head-mask .mask-team .mask-icon a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 100%;
+}
+.head-mask .mask-team .mask-icon a img{
+	width: 100%;
+	height: 100%;
+}
+.head-mask .mask-team .mask-teamname{
+	font-size: 24px;
+	color: #fff;
+	font-weight: bolder;
+	text-align: center;
+	margin: 10px 0;
+}
+.head-mask .mask-team .mask-teamdetails{
+	text-align: center;
+	color: #fff;
+	font-size: 12px;
+	padding: 15px 0;
+	line-height: 18px;
+	height: 18px;
+}
+.head-mask .mask-team .mask-teamdetails .mask-areas{
+	line-height: 18px;
+	display: inline-block;
+	height: 18px;
+}
+.head-mask .mask-team .mask-teamdetails .mask-split{
+	font-size: 18px;
+	line-height: 18px;
+	display: inline-block;
+	color: rgba(255,255,255,0.16);
+	margin: 0 15px;
+}
+.head-mask .mask-team .mask-teamdetails .mask-constructor{
+	line-height: 18px;
+	display: inline-block;
+	height: 18px;
+}
+
+.head-mask .mask-details{
+	border-top: solid 1px rgba(255,255,255,0.24);
+	margin-top: 20px;
+}
+.head-mask .mask-details ul{
+	color: #fff;
+	padding-top: 30px;
+	width: 840px;
+	margin: 0 auto;
+}
+.head-mask .mask-details ul li{
+	display: inline-block;
+	width: 135px;
+	border-right: solid 1px rgba(255,255,255,0.16);
+	list-style: none;
+}
+.head-mask .mask-details ul li:last-child{
+	border: none;
+}
+.head-mask .mask-details ul li span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+	cursor: pointer;
+}
+.head-mask .mask-details ul li .num{
+	font-size: 24px;
+	font-weight: bolder;
+	color: rgba(255,255,255,0.8);
+}
+.head-mask .mask-details ul li:hover .num{
+	color: rgba(255,255,255,1);
+}
+.head-mask .mask-details ul li .name{
+	font-size: 16px;
+	color: rgba(255,255,255,0.4);
+}
+/*二维码*/
+.qrcode-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(255,255,255,0.8);
+	display: none;
+}
+#qrcode{
+	position: absolute;
+	width: 256px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border: solid 1px rgb(216,216,216);
+	padding: 20px;
+	z-index: 99;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+}
+#qrcode canvas{
+	display: none;
+}
+#qrcode p{
+	margin: 15px;
+	margin-top: 0;
+	margin-left: -5px;
+}
+#qrcode p span{
+	float: right;
+	cursor: pointer;
+	margin-right: -15px;
+}
+
+.shareWeixin-content{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(255,255,255,0.8);
+	display: none;
+}
+#shareWeixin{
+	position: absolute;
+	width: 240px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border: solid 1px rgb(216,216,216);
+	padding: 20px;
+	z-index: 99;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+}
+#shareWeixin p{
+	margin: 15px;
+	margin-top: 0;
+	margin-left: -5px;
+}
+#shareWeixin p span{
+	float: right;
+	cursor: pointer;
+	margin-right: -15px;
+}
+#shareWeixin img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+#shareWeibo{
+	position: fixed;
+	width: 240px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	background-color: #fff;
+	border: solid 1px rgb(216,216,216);
+	padding: 20px;
+	display: none;
+	z-index: 99;
+	box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.64);
+}
+#shareWeibo p{
+	margin: 15px;
+	margin-top: 0;
+	margin-left: -5px;
+}
+#shareWeibo p span{
+	float: right;
+	cursor: pointer;
+	margin-right: -15px;
+}
+#shareWeibo img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+
+.content{
+	width: 1200px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+.content .content-left{
+	box-sizing: border-box;
+	width: 840px;
+	display: inline-block;
+	background-color: #fff;
+	padding: 10px 30px;
+	margin-bottom: 100px;
+}
+.content .content-right{
+	width: 330px;
+	float: right;
+	display: inline-block;
+}
+.content .content-left .left-navigation{
+	border-bottom: solid 1px rgb(229,229,229);
+}
+.content .content-left .left-navigation li{
+	width: 92px;
+	display: inline-block;
+	padding: 10px;
+	transform: translateY(1px);
+	color: #000;
+	font-weight: 100;
+	font-size: 16px;
+	text-align: center;
+	margin: 0 20px;
+	position: relative;
+	cursor: pointer;
+}
+.content .content-left .left-navigation li.left-navigation-avtive{
+	color: rgb(191,0,8);
+	font-weight: bold;
+	border-bottom: solid 3px rgb(191,0,8);
+}
+.content .content-left .left-navigation li span{
+	display: none;
+}
+.content .content-left .left-navigation li.new-news span{
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 90px;
+	color: #fff;
+	height: 14px;
+	line-height: 14px;
+	border-radius: 7px;
+	background-color: rgb(191,0,8);
+	padding: 0 5px;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+.content .content-right .right-intro{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px 20px;
+	font-size: 14px;
+	color: rgb(132,132,132);
+	background-color: #fff;
+}
+.content .content-right .right-intro .right-intro-main{
+	
+}
+.content .content-right .right-intro .right-intro-main li{
+	border-bottom: solid 1px rgb(240,240,240);
+	padding: 0 10px;
+}
+.content .content-right .right-intro .right-intro-main li div{
+	line-height: 40px;
+	height: 40px;
+}
+.content .content-right .right-intro .right-intro-main li a{
+	line-height: 40px;
+	height: 40px;
+}
+.content .content-right .right-intro .right-intro-main li a i{
+	line-height: 42px;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 100;
+	margin-right: 8px;
+}
+.content .content-right .right-intro .right-intro-main li div i{
+	line-height: 42px;
+	height: 40px;
+	float: left;
+	display: inline-block;
+	font-size: 22px;
+	font-weight: 100;
+	margin-right: 8px;
+}
+.content .content-right .right-intro .right-intro-main li .right-type{
+	font-weight: bold;
+	color: rgb(240,109,115);
+	display: inline-block;
+}
+
+.content .content-right .right-intro .right-intro-main li .right-num{
+	display: inline-block;
+	float: right;
+}
+.content .content-right .right-intro .right-intro-main li .right-num i{
+	color: #8ec1ed;
+}
+.content .content-right .right-intro .right-intro-main li .right-address{
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	line-height: 40px;
+	height: 40px;
+	color: rgb(132,132,132);
+}
+.content .content-right .right-intro .right-intro-main li .right-local{
+	height: auto;
+	padding-left: 28px;
+	position: relative;
+}
+.content .content-right .right-intro .right-intro-main li .right-local i{
+	color: #a6d8a2;
+	position: absolute;
+	left: 0;
+}
+.content .content-right .right-intro .right-intro-main li .right-address i{
+	color: #f6d189;
+}
+.content .content-right .right-intro .right-intro-main li .right-address:hover{
+	text-decoration: underline;
+}
+.content .content-right .right-intro .right-intro-main li .right-address:hover i{
+	text-decoration: none;
+}
+.content .content-right .right-tag{
+	color: rgb(132,132,132);
+	font-size: 12px;
+	margin-top: 10px;
+	overflow: hidden;
+	padding: 0 10px;
+}
+.content .content-right .right-tag li{
+	float: left;
+	text-indent: 22px;
+	background: url(../img/teamTag.png) no-repeat;
+	background-position: 0 50%;
+	margin: 5px;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-ms-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+
+
+.content .content-right .right-menber{
+	margin-top: 20px;
+	padding: 15px 20px;
+	background-color: #fff;
+}
+.content-right .right-menber .menber-member{
+	font-size: 12px;
+	color: rgb(132,132,132);
+	padding: 0 10px;
+	padding-bottom: 20px;
+	border-bottom: solid 2px rgb(242,242,242);
+}
+.content-right .right-menber .menber-member p{
+	margin: 10px 0;
+}
+.content-right .right-menber .menber-member p a{
+	color: rgb(23,81,165);
+	display: inline-block;
+	margin: 0 4px;
+}
+.content-right .right-menber .menber-member p a:hover{
+	text-decoration: underline;
+}
+.content-right .right-menber .menber-member nav{
+	overflow: hidden;
+}
+.content-right .right-menber .menber-member nav a{
+	display: inline-block;
+	float: left;
+	width: 35px;
+	height: 35px;
+	margin: 5px;
+}
+.content-right .right-menber .menber-member nav a img{
+	width: 100%;
+	height: 100%;
+}
+
+.content-right .right-menber .menber-intro{
+	padding: 5px 15px 0 15px;
+	color: rgb(132,132,132);
+	overflow: hidden;
+}
+.content-right .right-menber .menber-intro h3{
+	font-size: 16px;
+	font-weight: 500;
+	margin: 10px 0;	
+}
+.content-right .right-menber .menber-intro p{
+	font-size: 12px;
+	line-height: 20px;
+	height: 80px;
+	overflow: hidden;
+}
+.content-right .right-menber .show p{
+	height: auto;
+}
+.content-right .right-menber .menber-intro .menber-intro-btn{
+	float: right;
+	cursor: pointer;
+	display: block;
+	width: 12px;
+	height: 12px;
+	background: url(../img/arrowDown.png) no-repeat;
+	background-size: 100%;
+	margin: 5px 5px 0 0;
+}
+.content-right .right-menber .show .menber-intro-btn{
+	background-image: url(../img/arrowUp.png);
+}
+
+
+.content .content-right .hotteam{
+	margin-top: 20px;
+	padding: 15px 20px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.content .content-right .hotteam p{
+	padding: 5px 10px 10px 10px;
+	line-height: 24px;
+	height: 24px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 500;
+	border-bottom: solid 1px rgb(240,240,240);
+	margin-bottom: 8px;
+}
+.content .content-right .hotteam p i{
+	display: inline-block;
+	margin-right: 3px;
+}
+.content .content-right .hotteam p.hasNum i{
+	color: #469be3;
+}
+.content .content-right .hotteam p.noNum i{
+	color: #bf0008;
+}
+.content .content-right .hotteam p .hotteam-num{
+	float: right;
+	color: rgb(132,132,132);
+}
+.content .content-right .hotteam p .hotteam-num span{
+	color: #4f4f4f;
+	font-weight: bold;
+}
+.content .content-right .hotteam nav{
+	overflow: hidden;
+	padding: 8px;
+	color: rgb(132,132,132);
+}
+.content .content-right .hotteam nav a{
+	display: inline-block;
+	float: left;
+	width: 78px;
+	margin: 6px;
+	color: rgb(132,132,132);
+}
+.content .content-right .hotteam nav a img{
+	width: 100%;
+	height: 78px;
+	display: block;
+}
+.content .content-right .hotteam nav a span{
+	width: 100%;
+	font-size: 12px;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 10px;
+}
+.content .content-right .hotteam .hasNum{
+	display: none;
+}
+.content .content-right .hotteam .noNum{
+	display: block;
+}
+.content .content-right .first-class .hasNum{
+	display: block;
+}
+.content .content-right .first-class .noNum{
+	display: none;
+}
+
+
+
+
+
+
+.pages{
+	border-top: solid 1px rgb(247,247,247);
+	padding: 30px 90px;
+	margin: 0 30px;
+}
+.footer .content{
+	margin-top: 0;
+}
+

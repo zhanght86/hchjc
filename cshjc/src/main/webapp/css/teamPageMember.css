@@ -1,0 +1,57 @@
+.content .content-left{
+	box-sizing: border-box;
+	padding: 10px;
+}
+.content .content-left .left-navigation{
+	padding: 0 20px;
+}
+
+.content .content-left nav{
+	overflow: hidden;
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+.content .content-left nav a{
+	display: inline-block;
+	float: left;
+	width: 125px;
+	background-color: rgb(244,244,244);
+	padding-bottom: 10px;
+	margin: 15px 19px;
+}
+.content .content-left nav a img{
+	display: block;
+	height: 125px;
+	width: 125px;
+}
+.content .content-left nav a p{
+	width: 100%;
+	text-align: center;
+}
+.content .content-left nav a .left-member-name{
+	color: #000;
+	font-size: 14px;
+	font-weight: 600;
+	margin: 8px 0;
+}
+.content .content-left nav a .left-member-name:hover{
+	color: #B22824;
+}
+.content .content-left nav a .left-member-position{
+	color: rgb(68,68,68);
+	font-size: 14px;
+	font-weight: 100;
+	margin: 2px 0;
+}
+.content .content-left nav a .left-member-local{
+	font-weight: 100;
+	font-size: 12px;
+	color: rgb(168,168,168);
+	margin: 2px;
+}
+
+
+
+
+
+

@@ -1,0 +1,170 @@
+.top {
+	position: relative;
+	height: 182px;
+}
+
+.top .top-desc {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.top .top-desc .top-decs-content {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+.top .top-desc h5 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: bolder;
+	margin-top: 85px;
+	margin-left: 50px;
+}
+
+.top .top-desc p {
+	color: #f1f1f1;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 28px;
+}
+
+.top .top-desc p span {
+	color: #fdd345;
+	font-size: 14px;
+}
+
+
+.navigation{
+	width: 100%;
+	height: 60px;
+	background-color: #ffffff;
+}
+.navigation ul{
+	width: 680px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.navigation ul li{
+	float: left;
+	width: 110px;
+	margin: 0 30px;
+	height: 100%;
+	cursor: pointer;
+	font-size: 16px;
+	color: #333333;
+	line-height: 60px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.navigation ul li.active{
+	color: #bf0007;
+	border-bottom: solid 3px #bf0007;
+	font-weight: bold;
+}
+.navigation ul li span{
+	font-size: 12px;
+	color: #afafaf;
+}
+
+
+.album-content {
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.album-content .album-list {
+	overflow: hidden;
+}
+
+.album-content .album-list a {
+	float: left;
+	display: inline-block;
+	width: 390px;
+	margin: 10px 5px;
+}
+.album-content .album-list a .album-img{
+	width: 100%;
+	height: 216px;
+	padding: 0;
+}
+.album-content .album-list a:hover .album-img .album-mask{
+	background-color: rgba(255,255,255,0.16);
+}
+.album-content .album-list a .album-img .album-mask{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0);
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s ;
+	-ms-transition: all ease-in-out 0.2s ;
+	-o-transition: all ease-in-out 0.2s ;
+	transition: all ease-in-out 0.2s ;
+}
+.album-content .album-list a .album-img img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.album-content .album-list a div {
+	box-sizing: border-box;
+	background-color: #fff;
+	padding: 15px;
+	color: #000;
+	position: relative;
+}
+
+.album-content .album-list a div h5 {
+	font-size: 14px;
+	font-weight: bolder;
+	display: inline-block;
+}
+.album-content .album-list a div h5:hover{
+	color: #B02a29;
+}
+.album-content .album-list a div span {
+	font-size: 12px;
+	color: #6b6b6b;
+	display: block;
+	margin-top: 5px;
+}
+
+.album-content .album-list a div i {
+	-webkit-transition: all ease-in-out 0.3s;
+	-moz-transition: all ease-in-out 0.3s;
+	-ms-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+	position: absolute;
+	color: #cdcdcd;
+	font-size: 24px;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	right: 35px;
+	top: 20px;
+}
+
+.album-content .album-list a:hover div i {
+	right: 15px;
+}
+
+.pages{
+	margin: 0 auto;
+	width: 580px;
+	margin-top: 70px;
+	margin-bottom: 90px;
+}
+
+

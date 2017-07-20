@@ -1,0 +1,223 @@
+
+/*caseblock*/
+.caseBlock .caseList{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.caseBlock .caseList li{
+	float: left;
+	width: 23.1%;
+	margin: 0 0.9%;
+	padding-top: 35.9%;
+	position: relative;
+	margin-bottom: 25px;
+}
+.caseBlock .caseList li .imgBox{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.caseBlock .caseList li .imgBox .caseFigure{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.caseBlock .caseList li .imgBox .shadow{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 1;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.caseBlock .caseList li .imgBox .caseTitle{
+	width: 70%;
+	position: absolute;
+	bottom: 12px;
+	left: 3%;
+	z-index: 4;
+	font-size: 0.875em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #ffffff;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.caseBlock .caseList li .imgBox .score{
+	width: 20%;
+	position: absolute;
+	bottom: 12px;
+	right: 3%;
+	z-index: 3;
+	font-size: 1em;
+	color: #ffffff;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.caseBlock .caseList li:hover{
+	cursor: pointer;
+}
+.caseBlock .caseList li:hover .shadow,.caseBlock .caseList li:hover .caseTitle,.caseBlock .caseList li:hover .score{
+	opacity: 0;
+}
+.caseBlock .caseList li .mask{
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: rgba(0,0,0,0.32);
+	z-index: 3;
+	position: relative;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+.caseBlock .caseList li .mask img{
+	width: 60%;
+	position: absolute;
+	top: 15%;
+	left: 20%;
+}
+.caseBlock .caseList li .mask .caseTitle2{
+	color: #ffffff;
+	font-size: 0.875em;
+	position: absolute;
+	top: 60%;
+	left: 3%;
+	width: 94%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+.caseBlock .caseList li .mask .star{
+	position: absolute;
+	top: 68.5%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 86px;
+	height: 11px;
+	background: url(../img/level.png) no-repeat;
+	background-size: 86px auto;
+}
+.caseBlock .caseList li .mask .star.level-1{
+	background-position: 0 0;
+}
+.caseBlock .caseList li .mask .star.level-2{
+	background-position: 0 -11px;
+}
+.caseBlock .caseList li .mask .star.level-3{
+	background-position: 0 -22px;
+}
+.caseBlock .caseList li .mask .star.level-4{
+	background-position: 0 -33px;
+}
+.caseBlock .caseList li .mask .star.level-5{
+	background-position: 0 -44px;
+}
+.caseBlock .caseList li .mask .star.level-6{
+	background-position: 0 -55px;
+}
+.caseBlock .caseList li .mask .star.level-7{
+	background-position: 0 -66px;
+}
+.caseBlock .caseList li .mask .star.level-8{
+	background-position: 0 -77px;
+}
+.caseBlock .caseList li .mask .star.level-9{
+	background-position: 0 -88px;
+}
+.caseBlock .caseList li .mask .star.level-10{
+	background-position: 0 -99px;
+}
+.caseBlock .caseList li .mask .star.level-11{
+	background-position: 0 -110px;
+}
+.caseBlock .caseList li .mask .star.level-12{
+	background-position: 0 -121px;
+}
+.caseBlock .caseList li .mask .star.level-13{
+	background-position: 0 -132px;
+}
+.caseBlock .caseList li .mask .star.level-14{
+	background-position: 0 -143px;
+}
+.caseBlock .caseList li .mask .star.level-15{
+	background-position: 0 -154px;
+}
+.caseBlock .caseList li .mask .star span{
+	width: 12px;
+	height: 12px;
+	border: 1px solid #ffffff;
+	float: left;
+	margin: 0 3px;
+	display: block;
+}
+.caseBlock .caseList li .mask h3{
+	position: absolute;
+	top: 78%;
+	width: 100%;
+	color: #ffffff;
+	font-size: 1.25em;
+	text-align: center;
+}
+.caseBlock .caseList li .mask .data{
+	position: absolute;
+	bottom: 14px;
+	left: 3%;
+	width: 94%;
+}
+.caseBlock .caseList li .mask .data p{
+	float: left;
+	color: #ffffff;
+	margin-left: 16px;
+	font-size: 0.75em;
+	height: 20px;
+	line-height: 20px;
+	width: 65px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.caseBlock .caseList li .mask .data p span{
+	margin-right: 6px;
+	display: inline-block;
+	line-height: 20px;
+	height: 20px;
+}
+.caseBlock .caseList li .mask .data a{
+	float: right;
+	font-size: 0.875em;
+	color: #ffffff;
+}
+.caseBlock .caseList li:hover .mask{
+	opacity: 1;
+}
+
+.content-left .pages{
+	margin: 0 10px;
+}

@@ -1,0 +1,386 @@
+.personal-center{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+.personal-center .edit{
+	width: 1000px;
+	height: 240px;
+	position: relative;
+}
+.personal-center .edit img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.personal-center .edit span{
+	border: solid 1px rgb(105,105,105);
+	color: rgb(105,105,105);
+	font-size: 12px;
+	line-height: 30px;
+	height: 30px;
+	display: inline-block;
+	border-radius: 3px;
+	padding: 0 20px;
+	background-color: rgba(255,255,255,0.32);
+	position: absolute;
+	top: 35px;
+	right: 15px;
+	cursor: pointer;
+}
+
+.personal-center .main-info{
+	color: rgb(103,103,103);
+	font-size: 12px;
+	box-shadow: 0px 0px 1px 5px rgba(0,0,0,0.32);
+	-webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.16);
+	box-sizing: border-box;
+	padding: 0 30px;
+	background-color: #fff;
+	position: relative;
+}
+.personal-center .main-info i{
+	color: rgb(200,200,200);
+	margin-right: 5px;
+	font-size: 12px;
+	display: inline-block;
+	line-height: 18px;
+	height: 18px;
+}
+.personal-center .main-info span{
+	display: inline-block;
+	line-height: 18px;
+	height: 18px;
+	margin: 2px 0;
+}
+.personal-center .main-info .personal-name{
+	font-size: 24px;
+	font-weight: 600;
+	color: #000;
+	padding: 20px 0;
+}
+.personal-center .main-info .return-user{
+	float: right;
+	color: #b9bcc1;
+	margin-top: 22px;
+}
+.personal-center .main-info .image-box{
+	width: 160px;
+	height: 160px;
+	display: inline-block;
+	border: solid 5px #fff;
+	border-radius: 5px;
+	float: left;
+	transform: translateY(-50px);
+	margin-right: 20px;
+	position: relative;
+	cursor: pointer;
+}
+.personal-center .main-info .image-box img{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.personal-center .main-info .image-box label{
+	display: none;
+	position: absolute;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.32);
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.personal-center .main-info .image-box:hover label{
+	display: block;
+}
+.personal-center .main-info .image-box label span{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-size: 36px;
+	margin-top: 50px;
+}
+.personal-center .main-info .image-box label p{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 15px;
+}
+.personal-center .main-info .image-box label input{
+	visibility: hidden;
+}
+
+
+.personal-center .main-info .personal-info .personal-name{
+	font-size: 24px;
+	font-weight: bolder;
+	color: #000000;
+	line-height: 25px;
+}
+
+
+.info-box{
+	margin-left: 200px;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: solid 1px #f0f0f0;
+}
+.info-box .info-title{
+	font-weight: 600;
+	font-size: 16px;
+	color: #000;
+}
+.info-box .info-item{
+	margin: 20px 0;
+	height: 30px;
+	line-height: 30px;
+}
+.info-box .info-item .item-title{
+	font-size: 14px;
+	color: #a8a8a8;
+	display: inline-block;
+	margin: 0 40px 0 50px;
+	float: left;
+	text-align: right;
+	width: 78px;
+	height: 30px;
+	line-height: 30px;
+}
+.info-box .info-item .info-content{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	width: 65%;
+}
+.info-box .info-item input[type^="radio"]{
+	display: inline-block;
+	transform: translateY(2px);
+}
+.info-box .info-item label{
+	display: inline-block;
+	margin: 0 3px;
+	line-height: 30px;
+	height: 30px;
+}
+.info-box .info-item label:first-of-type{
+	margin-right: 20px;
+}
+.basic-info{
+	position: relative;
+}
+.basic-info input[type^="text"]{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: solid 1px #ececec;
+	padding: 0 10px;
+}
+.basic-info input[name^="describe"]{
+	width: 250px;
+}
+.basic-info input[name^="address"]{
+	width: 215px;
+}
+.info-box .info-item .selectBox{
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	display: inline-block;
+	float: left;
+	border-radius: 5px;
+	border: solid 1px #ececec;
+	text-indent: 10px;
+}
+.occu-info input[type^="text"]{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: solid 1px #ececec;
+	padding: 0 10px;
+	width: 175px;
+}
+.occu-info .info-item span:not([class^=item-title]){
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 10px;
+	float: left;
+}
+.occu-info #company .selectBox{
+	width: 195px;
+}
+.occu-info #work-time .selectBox{
+	width: 90px;
+}
+.occu-info .apply-box{
+	margin: 40px 0;
+}
+.occu-info .apply-box button{
+	padding: 5px 15px;
+	border: solid 1px #999999;
+	color: #999999;
+	background-color: initial;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.occu-info .apply-box button:first-child{
+	background-color: #2c8fec;
+	color: #fff;
+	border-color: #2c8fec;
+	margin-left: 168px;
+	margin-right: 20px;
+}
+.occu-info .occupation-list{
+	margin-right: 20px;
+}
+.occu-info .occupation-list li{
+	padding: 25px 0;
+	border-top: solid 1px #f0f0f0;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 20px;
+	margin-left: 50px;
+	font-size: 14px;
+}
+.occu-info .occupation-list li:last-child{
+	padding-bottom: 10px;
+}
+.occu-info .occupation-list li span{
+	margin: 0;
+	display: inline-block;
+}
+.occu-info .occupation-list li .occu-point{
+	width: 8px;
+	height: 8px;
+	background-color: #cccccc;
+	margin: 0 20px;
+	border-radius: 100%;
+}
+.occu-info .occupation-list li .occu-company{
+	padding-right: 18px;
+	border-right: solid 1px #e4e4e4;
+}
+.occu-info .occupation-list li .occu-position{
+	margin-left: 12px;
+}
+.occu-info .occupation-list li .occu-root{
+	font-size: 12px;
+	color: #999999;
+	margin-left: 15px;
+}
+.occu-info .occupation-list li .occu-edit{
+	display: inline-block;
+	float: right;
+	margin-right: 50px;
+}
+.occu-info .occupation-list li .occu-edit span{
+	margin-left: 12px;
+}
+.occu-info .occupation-list li .occu-edit span:hover{
+	color: #b32825;
+	cursor: pointer;
+}
+
+
+.concat-info{
+	padding-bottom: 50px;
+	margin-bottom: 90px;
+}
+.concat-info .info-item{
+	margin-right: 125px;
+}
+.concat-info .info-item input{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	border: solid 1px #ececec;
+	padding: 0 10px;
+	width: 175px;
+}
+.concat-info .info-item .selectBox{
+	float: right;
+	background-color: #f2f2f2;
+}
+.info-box .selectBox{
+	cursor: pointer;
+	position: relative;
+}
+.info-box .selectBox ul{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.info-box .selectBox li{
+	cursor: pointer;
+	background-color: #fff;
+	border: solid 1px #ececec;
+	border-top: none;
+}
+.info-box .info-root{
+	width: 130px;
+}
+.info-box .selectBox .select-showBox i{
+	float: right;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	margin-right: 15px;
+}
+.concat-info .selectBox .select-showBox i{
+	margin-left: 8px;
+}
+.basic-info .info-save{
+	width: 65px;
+	height: 32px;
+	border-radius: 5px;
+	border: solid 1px #b22826;
+	color: #b22826;
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	background-color: initial;
+	cursor: pointer;
+	-webkit-transition: all ease-in-out 0.3s;
+	-moz-transition: all ease-in-out 0.3s;
+	-ms-transition: all ease-in-out 0.3s;
+	-o-transition: all ease-in-out 0.3s;
+	transition: all ease-in-out 0.3s;
+}
+.basic-info .info-save:hover{
+	color: #ffffff;
+	background-color: #b22826;
+}
+
+.occu-info #company .info-root{
+	float: right;
+	width: 130px;
+	background-color: #f2f2f2;
+	cursor: pointer;
+}
+
+.info-box .info-root li{
+	background-color:  #f2f2f2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
