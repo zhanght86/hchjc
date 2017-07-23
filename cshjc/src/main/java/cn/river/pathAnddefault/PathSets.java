@@ -1,4 +1,4 @@
-package cn.cshjc.pathAnddefault;
+package cn.river.pathAnddefault;
 
 /**
  * Created by Guide on 2017/2/3.

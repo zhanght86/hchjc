@@ -21,6 +21,15 @@
     <filter-name>characterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <!-- CORS -->
+  <filter>
+    <filter-name>cors</filter-name>
+    <filter-class>cn.river.filter.CORSFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>cors</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
   <!-- 配置DispatcherServlet -->
   <servlet>
     <servlet-name>faceJiang-dispatcher</servlet-name>

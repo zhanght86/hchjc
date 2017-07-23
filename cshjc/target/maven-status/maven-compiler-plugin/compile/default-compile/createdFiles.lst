@@ -1,6 +1,9 @@
+cn\river\service\SensorDataService.class
 cn\river\dto\DataTables.class
+cn\river\filter\CORSFilter.class
 cn\river\web\AuthoritiesAction.class
 cn\river\execptions\QRException.class
+cn\river\web\DevicesAction.class
 com\baidu\ueditor\ConfigManager.class
 cn\river\web\BackLogin.class
 cn\river\web\UtilAction.class
@@ -8,6 +11,7 @@ com\baidu\ueditor\define\AppInfo$1.class
 com\baidu\ueditor\upload\BinaryUploader.class
 cn\river\utils\UtilMedia.class
 com\baidu\ueditor\hunter\FileManager.class
+cn\river\entity\SensorDataEntity.class
 cn\river\execptions\RiverException.class
 cn\river\dto\AjaxResult.class
 cn\river\utils\UtilURL.class
@@ -20,9 +24,11 @@ cn\river\interceptors\UserAgentCheck.class
 com\baidu\ueditor\PathFormat.class
 cn\river\web\AdminAction.class
 com\baidu\ueditor\define\ActionMap.class
+cn\river\entity\User.class
 cn\river\interceptors\AdminLoginCheck.class
 cn\river\utils\UtilCommon.class
 cn\river\entity\AdminsEntity.class
+cn\river\pathAnddefault\PathSets.class
 com\baidu\ueditor\define\MIMEType$1.class
 com\baidu\ueditor\upload\StorageManager.class
 com\baidu\ueditor\define\State.class
@@ -31,12 +37,13 @@ cn\river\datas\AuthorityEnums.class
 cn\river\dto\FrontPage.class
 cn\river\utils\UtilCommon$1.class
 cn\river\utils\UtilImage.class
+cn\river\dao\DevicesDataDao.class
 cn\river\entity\AuthoritiesEntity.class
 com\baidu\ueditor\hunter\ImageHunter.class
 cn\river\dto\DataTablesResult.class
+cn\river\entity\BlaRriDataEntity.class
 com\baidu\ueditor\define\ActionState.class
 com\baidu\ueditor\define\MultiState.class
-cn\cshjc\pathAnddefault\PathSets.class
 com\baidu\ueditor\upload\Uploader.class
 cn\river\utils\UtilQRCode.class
 cn\river\datas\DataEnums.class
@@ -52,4 +59,6 @@ com\baidu\ueditor\ActionEnter.class
 com\baidu\ueditor\define\ActionMap$1.class
 com\baidu\ueditor\define\FileType$1.class
 cn\river\utils\UtilMD5.class
+cn\river\entity\DevicesDataEntity.class
 cn\river\dao\AdminsDao.class
+cn\river\dto\AjaxResult2.class
