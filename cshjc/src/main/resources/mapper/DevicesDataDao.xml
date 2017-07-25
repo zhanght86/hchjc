@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.river.dao.DevicesDataDao">
+    <!-- 插入时，主键冲突不报错 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" >
+        INSERT ignore INTO devicesdata(deviceId,cod,doPer,doVal,nh4,temp,orp,zs,version,quanity,devicePostTime,addTime)
+        VALUES (#{deviceId},#{cod},#{doPer},#{doVal},#{nh4},#{temp},#{orp},#{zs},#{version},#{quanity},#{devicePostTime},#{addTime})
+    </insert>
+
+</mapper>
