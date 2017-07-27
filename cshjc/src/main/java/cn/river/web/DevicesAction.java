@@ -11,7 +11,6 @@ import cn.river.utils.UtilLog;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -35,7 +34,6 @@ public class DevicesAction {
     }
     
   //上传数据
-    @CrossOrigin
     @RequestMapping(value = "/Sensordata",method = RequestMethod.POST)
     @ResponseBody
     public String insert(@RequestBody String Sensordata,HttpServletResponse response){

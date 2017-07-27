@@ -9,11 +9,13 @@ import cn.river.entity.AdminsEntity;
 import cn.river.utils.UtilCols;
 import cn.river.utils.UtilDate;
 import cn.river.utils.UtilMD5;
+
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
+
 import java.util.List;
 
 /**
@@ -23,8 +25,12 @@ import java.util.List;
 public class AdminsService {
     @Resource
     AdminsDao adminsDao;
-
-    //validate
+    
+//    public AdminsService() {
+//    	CustomerContextHolder.setCustomerType(CustomerContextHolder.DATA_SOURCE_MYSQL);
+//	}
+    
+	//validate
     public AjaxResult validate(String username, String password, HttpServletRequest request,String authorCode){
         if (request.getSession().getAttribute("strCode") == null || authorCode == null || !request.getSession().getAttribute("strCode").equals(authorCode)){
             return new AjaxResult(400,"验证码错误");

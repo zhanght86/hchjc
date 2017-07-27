@@ -8,9 +8,11 @@ import cn.river.dto.GetByPage;
 import cn.river.entity.AuthoritiesEntity;
 import cn.river.utils.UtilCols;
 import cn.river.utils.UtilDate;
+
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+
 import java.util.List;
 
 /**
@@ -21,7 +23,7 @@ public class AuthoritiesService {
     @Resource
     AuthoritiesDao authoritiesDao;
 
-    //insert
+	//insert
     public AjaxResult insert(AuthoritiesEntity authoritiesEntity){
         if (checkInsert(authoritiesEntity)) {
             System.out.println(authoritiesEntity.toString());

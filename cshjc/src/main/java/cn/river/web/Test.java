@@ -6,13 +6,19 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import cn.river.utils.UtilMD5;
+import com.mongodb.MongoClient;
 
 @Controller
-@RequestMapping("/test.do")
+@RequestMapping("/test")
 public class Test {
+	
 	@RequestMapping(params = "method=test")
 	public void test(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println(UtilMD5.getMD5Code("管理员密码："+"cshjc2017"));
+		try{
+			System.out.println("aaaa");
+			MongoClient mongoClient = new MongoClient( "localhost" , 27017);
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }

@@ -84,45 +84,45 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-beans</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <!-- 2)Spring DAO依赖 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <!-- 3)Spring Web依赖 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-web</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <!--4)Spring test依赖 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>4.3.2.RELEASE</version>
+            <version>4.1.7.RELEASE</version>
         </dependency>
         <!-- 生成二维码依赖 -->
         <dependency>
@@ -161,7 +161,20 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>1.2.23</version>
-            </dependency>
+        </dependency>
+        <!-- mongo about begin -->  
+	    <dependency>
+	        <groupId>org.mongodb</groupId>
+	        <artifactId>mongodb-driver</artifactId>
+	        <version>3.4.1</version>
+	    </dependency>
+	
+	    <dependency>
+	        <groupId>org.mongodb</groupId>
+	        <artifactId>bson</artifactId>
+	        <version>3.4.1</version>
+	    </dependency>        
+		<!-- mongo about end -->
     </dependencies>
     <build>
         <finalName>cshjc</finalName>

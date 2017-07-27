@@ -22,27 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="D:/sshlibs/standard-1.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/slf4j-api-1.7.21.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/mysql-connector-java-5.1.35.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/mybatis-spring-1.2.3.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/mybatis-3.3.0.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/logback-core-1.1.7.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/logback-classic-1.1.7.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/jstl-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/json-20160212.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/javax.servlet-api-3.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/javase-3.1.0.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/jackson-databind-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/jackson-core-2.5.4.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/jackson-annotations-2.5.0.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/core-3.2.0.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/commons-logging-1.2.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/commons-io-2.2.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/commons-fileupload-1.2.1.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/commons-codec-1.10.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/c3p0-0.9.1.2.jar"/>
-	<classpathentry kind="lib" path="D:/sshlibs/aopalliance-1.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
