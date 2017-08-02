@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.river.dao.CollectionSpotsDao">
+    <!-- 插入时，主键冲突不报错 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" >
+        INSERT ignore INTO collectionspots(spotName,gps,addTime)
+        VALUES (#{spotName},#{gps},#{addTime})
+    </insert>
+	<update id="update">
+        UPDATE collectionspots
+        <trim prefix="set" suffixOverrides=",">
+            spotName = #{spotName},
+            gps = #{gps},
+            updateTime = #{updateTime},
+        </trim>
+        WHERE spotId = #{spotId}
+    </update>
+    <delete id="delete">
+        DELETE FROM collectionspots
+        WHERE spotId = #{spotId}
+    </delete>
+    <delete id="deleteList">
+        DELETE FROM collectionspots where spotId in
+        <foreach item="ids" collection="array" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+    <select id="getAllNum" resultType="Integer">
+        SELECT COUNT(*)
+        FROM collectionspots
+    </select>
+    <select id="queryId" resultType="CollectionSpotsEntity">
+        SELECT * FROM collectionspots
+        WHERE spotId = #{spotId}
+    </select>
+    <select id="queryExist" resultType="CollectionSpotsEntity">
+        SELECT *
+        FROM collectionspots
+        WHERE spotName = #{spotName}
+    </select>
+
+    <select id="queryAll" resultType="CollectionSpotsEntity">
+        SELECT *
+        FROM collectionspots
+    </select>
+    <select id="getPageNum" resultType="Integer">
+        SELECT COUNT(*)
+        FROM collectionspots c
+        <trim prefix="WHERE" suffixOverrides="AND">
+            <if test="searchWord!=null">(c.spotName LIKE #{searchWord} OR c.gps LIKE #{searchWord}) AND
+            </if>
+        </trim>
+    </select>
+    <select id="queryPage" resultType="CollectionSpotsEntity">
+        SELECT * from collectionspots
+        <trim prefix="WHERE" suffixOverrides="AND">
+            <if test="searchWord!=null">(spotName LIKE #{searchWord} OR gps LIKE #{searchWord} OR addTime LIKE #{searchWord}) AND
+            </if>
+        </trim>
+        <if test='orderCol!=null'>
+            ORDER BY ${orderCol} ${order}
+            LIMIT ${start},${length}
+        </if>
+    </select>
+</mapper>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.river.dao.DevicesDao">
+    <!-- 插入时，主键冲突不报错 -->
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id" >
+        INSERT ignore INTO devices(deviceId,spotId,deviceName,gps,authorCode,installTime,perSet,reset,request,addTime)
+        VALUES (#{deviceId},#{spotId},#{deviceName},#{gps},#{authorCode},#{installTime},#{perSet},#{reset},#{request},#{addTime})
+    </insert>
+	<update id="update">
+        UPDATE devices
+        <trim prefix="set" suffixOverrides=",">
+            deviceId = #{deviceId},
+            spotId = #{spotId},
+            <if test="deviceName!=null">deviceName = #{deviceName},</if>
+            <if test="gps!=null">gps = #{gps},</if>
+            <if test="authorCode!=null">authorCode = #{authorCode},</if>
+            <if test="installTime!=null">installTime = #{installTime},</if>
+            <if test="perSet!=null">perSet = #{perSet},</if>
+            <if test="reset!=null">reset = #{reset},</if>
+            <if test="request!=null">request = #{request},</if>
+            <if test="updateTime!=null">updateTime = #{updateTime},</if>
+        </trim>
+        WHERE id = #{id}
+    </update>
+    <delete id="delete">
+        DELETE FROM devices
+        WHERE id = #{id}
+    </delete>
+    <delete id="deleteList">
+        DELETE FROM devices where id in
+        <foreach item="ids" collection="array" open="(" separator="," close=")">
+            #{ids}
+        </foreach>
+    </delete>
+    <select id="getAllNum" resultType="Integer">
+        SELECT COUNT(*)
+        FROM devices
+    </select>
+    <select id="queryId" resultType="DevicesEntity">
+        SELECT *
+        FROM devices
+        WHERE id = #{id}
+    </select>
+    <select id="queryExist" resultType="DevicesEntity">
+        SELECT *
+        FROM devices
+        WHERE deviceName = #{deviceName}
+    </select>
+
+    <select id="queryAll" resultType="DevicesEntity">
+        SELECT *
+        FROM devices
+    </select>
+    <select id="getPageNum" resultType="Integer">
+        SELECT COUNT(d.id)
+        FROM devices d
+        <trim prefix="WHERE" suffixOverrides="AND">
+            <if test="searchWord!=null">(d.deviceId LIKE #{searchWord} OR d.deviceName LIKE #{searchWord} OR d.gps
+                LIKE #{searchWord} OR d.installTime LIKE #{searchWord}) AND
+            </if>
+            <if test="SinstallTime!=null">d.installTime &gt;= #{SinstallTime} AND</if>
+        </trim>
+    </select>
+    <select id="queryPage" resultType="DevicesEntity">
+        SELECT d.*,cs.spotName,cs.gps from devices d
+		LEFT JOIN collectionspots cs
+		ON d.spotId = cs.spotId
+        <trim prefix="WHERE" suffixOverrides="AND">
+            <if test="searchWord!=null">(d.deviceId LIKE #{searchWord} OR d.deviceName LIKE #{searchWord} OR d.gps
+                LIKE #{searchWord} OR d.installTime LIKE #{searchWord}) AND
+            </if>
+            <if test="SinstallTime!=null">d.installTime &gt;= #{SinstallTime} AND</if>
+        </trim>
+        <if test='orderCol=="spotName" or orderCol=="gps"'>
+            ORDER BY cs.${orderCol} ${order}
+            LIMIT ${start},${length}
+        </if>
+        <if test='orderCol!=null'>
+            ORDER BY d.${orderCol} ${order}
+            LIMIT ${start},${length}
+        </if>
+    </select>
+</mapper>
