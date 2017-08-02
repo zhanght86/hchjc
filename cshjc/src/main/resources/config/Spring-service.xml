@@ -9,7 +9,7 @@
     <!-- 配置事务管理器 -->
     <bean id="transectionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager" >
         <!-- 注入数据库连接池 -->
-        <property name="dataSource" ref="mysqlDataSource"/>
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <!-- 配置基于注解的声明事物 -->

@@ -35,11 +35,11 @@
             <form  method="post" id="log-form">
                 <div class="admin-box">
                     <i class="iconfont">&#xe606;</i>
-                    <input type="text" name="nm" id="name" value="" placeholder="请输入登录名" autocomplete="off"/>
+                    <input type="text" name="nm" id="name" value="admin" placeholder="请输入登录名" autocomplete="off"/>
                 </div>
                 <div class="pass-box">
                     <i class="iconfont">&#xe601;</i>
-                    <input type="password" name="pwd" id="password" value="" placeholder="请输入密码" autocomplete="off"/>
+                    <input type="password" name="pwd" id="password" value="admin" placeholder="请输入密码" autocomplete="off"/>
                 </div>
                 <div class="verification-box">
                     <input type="text" name="verification" id="authorCode" value="" autocomplete="off" onclick="if(this.value!=''){this.value='';}" />

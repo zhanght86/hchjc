@@ -37,7 +37,7 @@ public class AdminsService {
         }
         AdminsEntity a1 = new AdminsEntity(username,password);//UtilMD5.getMD5Code(password));
         AdminsEntity a2 = adminsDao.queryExist(a1);
-        System.out.println("a2:name->"+a2.getUsername()+",pass->"+a2.getPassword()+";a1:name->"+a1.getUsername()+",pass->"+a1.getPassword());
+//        System.out.println("a2:name->"+a2.getUsername()+",pass->"+a2.getPassword()+";a1:name->"+a1.getUsername()+",pass->"+a1.getPassword());
         if (a2!=null && a2.getPassword()!=null && !a2.getPassword().equals(a1.getPassword())){
             return new AjaxResult(400,"用户名或密码错误");
         }

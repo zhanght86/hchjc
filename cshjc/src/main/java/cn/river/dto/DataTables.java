@@ -16,26 +16,29 @@ public class DataTables {
     private Integer searchCol;
     private String order;
     private Integer sortingCol;
-    private String minmonth;
-    private String maxmonth;
-    private String dimension;
-//    后来添加的搜索
+//  后来添加的搜索
     private String Shot;    //all,是,否
-    private String Stop;    //all,未上榜,上榜
-    private Double Sscorefrom;  //评分下限
-    private Double Sscoreto;  //评分上限
-    private String Shome;   //all,已推荐,未推荐
-    private String Sshow;   //all,已发布,已下线
-    private String Sdatefrom; //发布日期下限
-    private String Sdateto; //发布日期上限
-    private String Stagtype;    //all,H5案例标签 等
-    private String Stagclass;   //all,id值
-    private String Steamtype;   //all,一级品牌主,二级品牌主,创意代理商
-    private String Steamlevel;  //all,推荐团队,普通团队
-    private Integer SisOk;
-
-
-    public DataTables(Integer draw, Integer start, Integer length, Integer colsNum, String[] colums, String searchWord, Integer searchCol, String order, Integer sortingCol, String minmonth, String maxmonth, String dimension) {
+    private int used;    //all,使用,停用
+    private String SinstallTime;
+	public DataTables(Integer draw, Integer start, Integer length,
+			Integer colsNum, String[] colums, String searchWord,
+			Integer searchCol, String order, Integer sortingCol, String shot,
+			int used, String sinstallTime) {
+		super();
+		this.draw = draw;
+		this.start = start;
+		this.length = length;
+		this.colsNum = colsNum;
+		this.colums = colums;
+		this.searchWord = searchWord;
+		this.searchCol = searchCol;
+		this.order = order;
+		this.sortingCol = sortingCol;
+		this.Shot = shot;
+		this.used = used;
+		SinstallTime = sinstallTime;
+	}
+	public DataTables(Integer draw, Integer start, Integer length, Integer colsNum, String[] colums, String searchWord, Integer searchCol, String order, Integer sortingCol) {
         this.draw = draw;
         this.start = start;
         this.length = length;
@@ -45,254 +48,166 @@ public class DataTables {
         this.searchCol = searchCol;
         this.order = order;
         this.sortingCol = sortingCol;
-        this.minmonth = minmonth;
-        this.maxmonth = maxmonth;
-        this.dimension = dimension;
     }
+	public DataTables() {
+    }
+	
+	/**
+	 * @return the draw
+	 */
+	public Integer getDraw() {
+		return draw;
+	}
+	/**
+	 * @param draw the draw to set
+	 */
+	public void setDraw(Integer draw) {
+		this.draw = draw;
+	}
+	/**
+	 * @return the start
+	 */
+	public Integer getStart() {
+		return start;
+	}
+	/**
+	 * @param start the start to set
+	 */
+	public void setStart(Integer start) {
+		this.start = start;
+	}
+	/**
+	 * @return the length
+	 */
+	public Integer getLength() {
+		return length;
+	}
+	/**
+	 * @param length the length to set
+	 */
+	public void setLength(Integer length) {
+		this.length = length;
+	}
+	/**
+	 * @return the colsNum
+	 */
+	public Integer getColsNum() {
+		return colsNum;
+	}
+	/**
+	 * @param colsNum the colsNum to set
+	 */
+	public void setColsNum(Integer colsNum) {
+		this.colsNum = colsNum;
+	}
+	/**
+	 * @return the colums
+	 */
+	public String[] getColums() {
+		return colums;
+	}
+	/**
+	 * @param colums the colums to set
+	 */
+	public void setColums(String[] colums) {
+		this.colums = colums;
+	}
+	/**
+	 * @return the searchWord
+	 */
+	public String getSearchWord() {
+		return searchWord;
+	}
+	/**
+	 * @param searchWord the searchWord to set
+	 */
+	public void setSearchWord(String searchWord) {
+		this.searchWord = searchWord;
+	}
+	/**
+	 * @return the searchCol
+	 */
+	public Integer getSearchCol() {
+		return searchCol;
+	}
+	/**
+	 * @param searchCol the searchCol to set
+	 */
+	public void setSearchCol(Integer searchCol) {
+		this.searchCol = searchCol;
+	}
+	/**
+	 * @return the order
+	 */
+	public String getOrder() {
+		return order;
+	}
+	/**
+	 * @param order the order to set
+	 */
+	public void setOrder(String order) {
+		this.order = order;
+	}
+	/**
+	 * @return the sortingCol
+	 */
+	public Integer getSortingCol() {
+		return sortingCol;
+	}
+	/**
+	 * @param sortingCol the sortingCol to set
+	 */
+	public void setSortingCol(Integer sortingCol) {
+		this.sortingCol = sortingCol;
+	}
+	/**
+	 * @return the shot
+	 */
+	public String getShot() {
+		return Shot;
+	}
+	/**
+	 * @param shot the shot to set
+	 */
+	public void setShot(String shot) {
+		Shot = shot;
+	}
+	/**
+	 * @return the used
+	 */
+	public int getUsed() {
+		return used;
+	}
+	/**
+	 * @param used the used to set
+	 */
+	public void setUsed(int used) {
+		this.used = used;
+	}
+	/**
+	 * @return the sinstallTime
+	 */
+	public String getSinstallTime() {
+		return SinstallTime;
+	}
+	/**
+	 * @param sinstallTime the sinstallTime to set
+	 */
+	public void setSinstallTime(String sinstallTime) {
+		SinstallTime = sinstallTime;
+	}
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "DataTables [draw=" + draw + ", start=" + start + ", length="
+				+ length + ", colsNum=" + colsNum + ", colums="
+				+ Arrays.toString(colums) + ", searchWord=" + searchWord
+				+ ", searchCol=" + searchCol + ", order=" + order
+				+ ", sortingCol=" + sortingCol + ", Shot=" + Shot + ", used="
+				+ used + ", SinstallTime=" + SinstallTime + "]";
+	}
 
-    public DataTables(Integer draw, Integer start, Integer length, Integer colsNum, String[] colums, String searchWord, Integer searchCol, String order, Integer sortingCol) {
-        this.draw = draw;
-        this.start = start;
-        this.length = length;
-        this.colsNum = colsNum;
-        this.colums = colums;
-        this.searchWord = searchWord;
-        this.searchCol = searchCol;
-        this.order = order;
-        this.sortingCol = sortingCol;
-    }
-
-    public DataTables() {
-    }
-
-    public Integer getSisOk() {
-        return SisOk;
-    }
-
-    public void setSisOk(Integer sisOk) {
-        SisOk = sisOk;
-    }
-
-    public String getShot() {
-        return Shot;
-    }
-
-    public void setShot(String shot) {
-        Shot = shot;
-    }
-
-    public String getStop() {
-        return Stop;
-    }
-
-    public void setStop(String stop) {
-        Stop = stop;
-    }
-
-    public Double getSscorefrom() {
-        return Sscorefrom;
-    }
-
-    public void setSscorefrom(Double sscorefrom) {
-        Sscorefrom = sscorefrom;
-    }
-
-    public Double getSscoreto() {
-        return Sscoreto;
-    }
-
-    public void setSscoreto(Double sscoreto) {
-        Sscoreto = sscoreto;
-    }
-
-    public String getShome() {
-        return Shome;
-    }
-
-    public void setShome(String shome) {
-        Shome = shome;
-    }
-
-    public String getSshow() {
-        return Sshow;
-    }
-
-    public void setSshow(String sshow) {
-        Sshow = sshow;
-    }
-
-    public String getSdatefrom() {
-        return Sdatefrom;
-    }
-
-    public void setSdatefrom(String sdatefrom) {
-        Sdatefrom = sdatefrom;
-    }
-
-    public String getSdateto() {
-        return Sdateto;
-    }
-
-    public void setSdateto(String sdateto) {
-        Sdateto = sdateto;
-    }
-
-    public String getStagtype() {
-        return Stagtype;
-    }
-
-    public void setStagtype(String stagtype) {
-        Stagtype = stagtype;
-    }
-
-    public String getStagclass() {
-        return Stagclass;
-    }
-
-    public void setStagclass(String stagclass) {
-        Stagclass = stagclass;
-    }
-
-    public String getSteamtype() {
-        return Steamtype;
-    }
-
-    public void setSteamtype(String steamtype) {
-        Steamtype = steamtype;
-    }
-
-    public String getSteamlevel() {
-        return Steamlevel;
-    }
-
-    public void setSteamlevel(String steamlevel) {
-        Steamlevel = steamlevel;
-    }
-
-    public String getMinmonth() {
-        return minmonth;
-    }
-
-    public void setMinmonth(String minmonth) {
-        this.minmonth = minmonth;
-    }
-
-    public String getMaxmonth() {
-        return maxmonth;
-    }
-
-    public void setMaxmonth(String maxmonth) {
-        this.maxmonth = maxmonth;
-    }
-
-    public String getDimension() {
-        return dimension;
-    }
-
-    public void setDimension(String dimension) {
-        this.dimension = dimension;
-    }
-
-    public Integer getDraw() {
-        return draw;
-    }
-
-    public void setDraw(Integer draw) {
-        this.draw = draw;
-    }
-
-    public Integer getStart() {
-        return start;
-    }
-
-    public void setStart(Integer start) {
-        this.start = start;
-    }
-
-    public Integer getLength() {
-        return length;
-    }
-
-    public void setLength(Integer length) {
-        this.length = length;
-    }
-
-    public Integer getColsNum() {
-        return colsNum;
-    }
-
-    public void setColsNum(Integer colsNum) {
-        this.colsNum = colsNum;
-    }
-
-    public String[] getColums() {
-        return colums;
-    }
-
-    public void setColums(String[] colums) {
-        this.colums = colums;
-    }
-
-    public String getSearchWord() {
-        return searchWord;
-    }
-
-    public void setSearchWord(String searchWord) {
-        this.searchWord = searchWord;
-    }
-
-    public Integer getSearchCol() {
-        return searchCol;
-    }
-
-    public void setSearchCol(Integer searchCol) {
-        this.searchCol = searchCol;
-    }
-
-    public String getOrder() {
-        return order;
-    }
-
-    public void setOrder(String order) {
-        this.order = order;
-    }
-
-    public Integer getSortingCol() {
-        return sortingCol;
-    }
-
-    public void setSortingCol(Integer sortingCol) {
-        this.sortingCol = sortingCol;
-    }
-
-    @Override
-    public String toString() {
-        return "DataTables{" +
-                "draw=" + draw +
-                ", start=" + start +
-                ", length=" + length +
-                ", colsNum=" + colsNum +
-                ", colums=" + Arrays.toString(colums) +
-                ", searchWord='" + searchWord + '\'' +
-                ", searchCol=" + searchCol +
-                ", order='" + order + '\'' +
-                ", sortingCol=" + sortingCol +
-                ", minmonth='" + minmonth + '\'' +
-                ", maxmonth='" + maxmonth + '\'' +
-                ", dimension='" + dimension + '\'' +
-                ", Shot='" + Shot + '\'' +
-                ", Stop='" + Stop + '\'' +
-                ", Sscorefrom=" + Sscorefrom +
-                ", Sscoreto=" + Sscoreto +
-                ", Shome='" + Shome + '\'' +
-                ", Sshow='" + Sshow + '\'' +
-                ", Sdatefrom='" + Sdatefrom + '\'' +
-                ", Sdateto='" + Sdateto + '\'' +
-                ", Stagtype='" + Stagtype + '\'' +
-                ", Stagclass='" + Stagclass + '\'' +
-                ", Steamtype='" + Steamtype + '\'' +
-                ", Steamlevel='" + Steamlevel + '\'' +
-                ", SisOk=" + SisOk +
-                '}';
-    }
+    
 }

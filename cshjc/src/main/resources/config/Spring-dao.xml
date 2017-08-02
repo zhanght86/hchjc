@@ -8,11 +8,9 @@
     <!-- 1.配置数据库相关
         $(url) 取 properties属性
      -->
-     <!-- 配置文件 -->
-    <context:property-placeholder location="classpath:config/jdbc.properties"/>
-    
-    <!-- 2.mysql数据库的连接池 -->
-    <bean id="mysqlDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+    <context:property-placeholder location="classpath:/config/jdbc.properties"/>
+    <!-- 2.数据库的连接池 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <!--  配置连接池属性 -->
         <property name="driverClass" value="${jdbc.driver}"/>
         <property name="jdbcUrl" value="${jdbc.url}"/>
@@ -37,11 +35,10 @@
         <property name="acquireRetryDelay" value="500"/>
 
     </bean>
-    
     <!-- 3.配置SqlSessionFactory对象 -->
     <bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <!-- 注入数据库连接池 -->
-        <property name="dataSource" ref="mysqlDataSource"/>
+        <property name="dataSource" ref="dataSource"/>
         <!-- 配置MyBatis全局配置文件 -->
         <property name="configLocation" value="classpath:config/Mybatis-config.xml"/>
         <!-- 扫描entity包 使用别名 -->

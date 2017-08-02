@@ -3,7 +3,6 @@ package cn.river.interceptors;
 import cn.river.datas.DataEnums;
 import cn.river.datas.AuthorityEnums;
 import cn.river.entity.AdminsEntity;
-import cn.river.entity.AuthoritiesEntity;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -16,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * Created by Guide on 2016/12/10.
  */
 public class AdminLoginCheck implements HandlerInterceptor {
+
     public boolean preHandle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Object o) throws Exception {
 
         String url = httpServletRequest.getRequestURI();
@@ -31,7 +31,6 @@ public class AdminLoginCheck implements HandlerInterceptor {
         		AuthorityEnums.DATA_RECOVERY.toString(),AuthorityEnums.DATA_CLEAN.toString(),AuthorityEnums.AUTHORITIES.toString(),AuthorityEnums.ADMINS.toString(),AuthorityEnums.SYSPARAMs.toString()};
 
         AdminsEntity admin = (AdminsEntity) httpServletRequest.getSession().getAttribute("adminInfo");
-
         if(admin==null || admin.getAuthority() == null || admin.getAuthority().getItems() == null){
            httpServletRequest.getRequestDispatcher(DataEnums.PATH_BASE.toString()).forward(httpServletRequest,httpServletResponse);
             return false;

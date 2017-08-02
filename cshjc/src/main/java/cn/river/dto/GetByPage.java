@@ -12,234 +12,141 @@ public class GetByPage {
     private String orderCol;
     private String[] searchCols;
     private String searchWord;
-    private String minmonth;
-    private String maxmonth;
-    private String dimension;
     //    后来添加的搜索
     private String Shot;    //all,是,否
-    private String Stop;    //all,未上榜,上榜
-    private Double Sscorefrom;  //评分下限
-    private Double Sscoreto;  //评分上限
-    private String Shome;   //all,已推荐,未推荐
-    private String Sshow;   //all,已发布,已下线
-    private String Sdatefrom; //发布日期下限
-    private String Sdateto; //发布日期上限
-    private String Stagtype;    //all,H5案例标签 等
-    private String Stagclass;   //all,id值
-    private String Steamtype;   //all,一级品牌主,二级品牌主,创意代理商
-    private String Steamlevel;  //all,推荐团队,普通团队
-    private Integer SisOk;
+    private int used;    //all,使用,停用
+    private String SinstallTime;
+	/**
+	 * @return the cols
+	 */
+	public String[] getCols() {
+		return cols;
+	}
+	/**
+	 * @param cols the cols to set
+	 */
+	public void setCols(String[] cols) {
+		this.cols = cols;
+	}
+	/**
+	 * @return the start
+	 */
+	public Integer getStart() {
+		return start;
+	}
+	/**
+	 * @param start the start to set
+	 */
+	public void setStart(Integer start) {
+		this.start = start;
+	}
+	/**
+	 * @return the length
+	 */
+	public Integer getLength() {
+		return length;
+	}
+	/**
+	 * @param length the length to set
+	 */
+	public void setLength(Integer length) {
+		this.length = length;
+	}
+	/**
+	 * @return the order
+	 */
+	public String getOrder() {
+		return order;
+	}
+	/**
+	 * @param order the order to set
+	 */
+	public void setOrder(String order) {
+		this.order = order;
+	}
+	/**
+	 * @return the orderCol
+	 */
+	public String getOrderCol() {
+		return orderCol;
+	}
+	/**
+	 * @param orderCol the orderCol to set
+	 */
+	public void setOrderCol(String orderCol) {
+		this.orderCol = orderCol;
+	}
+	/**
+	 * @return the searchCols
+	 */
+	public String[] getSearchCols() {
+		return searchCols;
+	}
+	/**
+	 * @param searchCols the searchCols to set
+	 */
+	public void setSearchCols(String[] searchCols) {
+		this.searchCols = searchCols;
+	}
+	/**
+	 * @return the searchWord
+	 */
+	public String getSearchWord() {
+		return searchWord;
+	}
+	/**
+	 * @param searchWord the searchWord to set
+	 */
+	public void setSearchWord(String searchWord) {
+		this.searchWord = searchWord;
+	}
+	/**
+	 * @return the shot
+	 */
+	public String getShot() {
+		return Shot;
+	}
+	/**
+	 * @param shot the shot to set
+	 */
+	public void setShot(String shot) {
+		Shot = shot;
+	}
+	/**
+	 * @return the used
+	 */
+	public int getUsed() {
+		return used;
+	}
+	/**
+	 * @param used the used to set
+	 */
+	public void setUsed(int used) {
+		this.used = used;
+	}
+	/**
+	 * @return the sdatefrom
+	 */
+	public String getSinstallTime() {
+		return SinstallTime;
+	}
+	/**
+	 * @param sdatefrom the sdatefrom to set
+	 */
+	public void setSinstallTime(String sinstallTime) {
+		SinstallTime = sinstallTime;
+	}
 
-    public Integer getSisOk() {
-        return SisOk;
-    }
+	/* (non-Javadoc)
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		return "GetByPage [cols=" + Arrays.toString(cols) + ", start=" + start
+				+ ", length=" + length + ", order=" + order + ", orderCol="
+				+ orderCol + ", searchCols=" + Arrays.toString(searchCols)
+				+ ", searchWord=" + searchWord + ", Shot=" + Shot + ", used="
+				+ used + ", SinstallTime=" + SinstallTime + "]";
+	}
 
-    public void setSisOk(Integer sisOk) {
-        SisOk = sisOk;
-    }
-
-    public String getShot() {
-        return Shot;
-    }
-
-    public void setShot(String shot) {
-        Shot = shot;
-    }
-
-    public String getStop() {
-        return Stop;
-    }
-
-    public void setStop(String stop) {
-        Stop = stop;
-    }
-
-    public Double getSscorefrom() {
-        return Sscorefrom;
-    }
-
-    public void setSscorefrom(Double sscorefrom) {
-        Sscorefrom = sscorefrom;
-    }
-
-    public Double getSscoreto() {
-        return Sscoreto;
-    }
-
-    public void setSscoreto(Double sscoreto) {
-        Sscoreto = sscoreto;
-    }
-
-    public String getShome() {
-        return Shome;
-    }
-
-    public void setShome(String shome) {
-        Shome = shome;
-    }
-
-    public String getSshow() {
-        return Sshow;
-    }
-
-    public void setSshow(String sshow) {
-        Sshow = sshow;
-    }
-
-    public String getSdatefrom() {
-        return Sdatefrom;
-    }
-
-    public void setSdatefrom(String sdatefrom) {
-        Sdatefrom = sdatefrom;
-    }
-
-    public String getSdateto() {
-        return Sdateto;
-    }
-
-    public void setSdateto(String sdateto) {
-        Sdateto = sdateto;
-    }
-
-    public String getStagtype() {
-        return Stagtype;
-    }
-
-    public void setStagtype(String stagtype) {
-        Stagtype = stagtype;
-    }
-
-    public String getStagclass() {
-        return Stagclass;
-    }
-
-    public void setStagclass(String stagclass) {
-        Stagclass = stagclass;
-    }
-
-    public String getSteamtype() {
-        return Steamtype;
-    }
-
-    public void setSteamtype(String steamtype) {
-        Steamtype = steamtype;
-    }
-
-    public String getSteamlevel() {
-        return Steamlevel;
-    }
-
-    public void setSteamlevel(String steamlevel) {
-        Steamlevel = steamlevel;
-    }
-
-    public String getMinmonth() {
-        return minmonth;
-    }
-
-    public void setMinmonth(String minmonth) {
-        this.minmonth = minmonth;
-    }
-
-    public String getMaxmonth() {
-        return maxmonth;
-    }
-
-    public void setMaxmonth(String maxmonth) {
-        this.maxmonth = maxmonth;
-    }
-
-    public String getDimension() {
-        return dimension;
-    }
-
-    public void setDimension(String dimension) {
-        this.dimension = dimension;
-    }
-
-    public String[] getCols() {
-        return cols;
-    }
-
-    public void setCols(String[] cols) {
-        this.cols = cols;
-    }
-
-    public Integer getStart() {
-        return start;
-    }
-
-    public void setStart(Integer start) {
-        this.start = start;
-    }
-
-    public Integer getLength() {
-        return length;
-    }
-
-    public void setLength(Integer length) {
-        this.length = length;
-    }
-
-    public String getOrder() {
-        return order;
-    }
-
-    public void setOrder(String order) {
-        this.order = order;
-    }
-
-    public String getOrderCol() {
-        return orderCol;
-    }
-
-    public void setOrderCol(String orderCol) {
-        this.orderCol = orderCol;
-    }
-
-    public String[] getSearchCols() {
-        return searchCols;
-    }
-
-    public void setSearchCols(String[] searchCols) {
-        this.searchCols = searchCols;
-    }
-
-    public String getSearchWord() {
-        return searchWord;
-    }
-
-    public void setSearchWord(String searchWord) {
-        this.searchWord = searchWord;
-    }
-
-    @Override
-    public String toString() {
-        return "GetByPage{" +
-                "cols=" + Arrays.toString(cols) +
-                ", start=" + start +
-                ", length=" + length +
-                ", order='" + order + '\'' +
-                ", orderCol='" + orderCol + '\'' +
-                ", searchCols=" + Arrays.toString(searchCols) +
-                ", searchWord='" + searchWord + '\'' +
-                ", minmonth='" + minmonth + '\'' +
-                ", maxmonth='" + maxmonth + '\'' +
-                ", dimension='" + dimension + '\'' +
-                ", Shot='" + Shot + '\'' +
-                ", Stop='" + Stop + '\'' +
-                ", Sscorefrom=" + Sscorefrom +
-                ", Sscoreto=" + Sscoreto +
-                ", Shome='" + Shome + '\'' +
-                ", Sshow='" + Sshow + '\'' +
-                ", Sdatefrom='" + Sdatefrom + '\'' +
-                ", Sdateto='" + Sdateto + '\'' +
-                ", Stagtype='" + Stagtype + '\'' +
-                ", Stagclass='" + Stagclass + '\'' +
-                ", Steamtype='" + Steamtype + '\'' +
-                ", Steamlevel='" + Steamlevel + '\'' +
-                ", SisOk=" + SisOk +
-                '}';
-    }
 }

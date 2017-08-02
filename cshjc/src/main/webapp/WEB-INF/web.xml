@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
                       http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>cshjc</display-name>
   <!-- 编码过滤器 -->
   <filter>
     <filter-name>characterEncodingFilter</filter-name>
@@ -21,15 +21,6 @@
     <filter-name>characterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
-  <!-- CORS 
-  <filter>
-    <filter-name>cors</filter-name>
-    <filter-class>cn.river.filter.CORSFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>cors</filter-name>
-    <url-pattern>/Sensordata</url-pattern>
-  </filter-mapping>-->
   <!-- 配置DispatcherServlet -->
   <servlet>
     <servlet-name>cshjc-dispatcher</servlet-name>

@@ -2,14 +2,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.faceh5</groupId>
+    <groupId>cn.river</groupId>
     <artifactId>cshjc</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
-    <name>cshjc Maven Webapp</name>
+    <version>2.0-SNAPSHOT</version>
+    <name>FaceH5</name>
     <url>http://maven.apache.org</url>
+     
     <dependencies>
-        <!-- 使用junit4 单元测试使用_-->
+        <!-- 使用junit4 单元测试使用-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -162,19 +163,6 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.23</version>
         </dependency>
-        <!-- mongo about begin -->  
-	    <dependency>
-	        <groupId>org.mongodb</groupId>
-	        <artifactId>mongodb-driver</artifactId>
-	        <version>3.4.1</version>
-	    </dependency>
-	
-	    <dependency>
-	        <groupId>org.mongodb</groupId>
-	        <artifactId>bson</artifactId>
-	        <version>3.4.1</version>
-	    </dependency>        
-		<!-- mongo about end -->
     </dependencies>
     <build>
         <finalName>cshjc</finalName>
@@ -188,4 +176,5 @@
        		</plugin>
        	</plugins>
     </build>
+    
 </project>
